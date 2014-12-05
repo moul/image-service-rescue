@@ -1,6 +1,15 @@
-NAME =		ocs-service-rescue
-VERSION =	trusty
-IS_LATEST =	1
-SOURCE_URL =	https://github.com/online-labs/image-builder/tree/master/service-rescue
+DOCKER_NAMESPACE =	armbuild/
+NAME =			ocs-service-rescue
+VERSION =		trusty
+VERSION_ALIASES =	14.04.1 14.04 latest
+TITLE =			Rescue
+DESCRIPTION =		Rescue
+SOURCE_URL =		https://github.com/online-labs/image-service-rescue
 
-include ../docker-rules.mk
+
+## Image tools  (https://github.com/online-labs/image-tools)
+all:	docker-rules.mk
+docker-rules.mk:
+	wget -qO - http://j.mp/image-tools | bash
+-include docker-rules.mk
+## Here you can add custom commands and overrides
