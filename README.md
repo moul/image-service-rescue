@@ -12,10 +12,10 @@ The Rescue image is not a typical image and is only available as a RAM-based ima
 Commands
 --------
 
-# build the image in a rootfs directory
-$ make rootfs
+    # build the image in a rootfs directory
+    $ make rootfs
 
-# push the rootfs.tar on s3
-$ make publish_on_s3.tar
+    # push the rootfs.tar on s3
+    $ make publish_on_s3.tar
 
 Full list of commands available at: https://github.com/online-labs/image-tools/tree/master#commands
