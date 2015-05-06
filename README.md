@@ -6,7 +6,7 @@ Scripts to build the official Rescue image on Scaleway
 
 This image is built using [Image Tools](https://github.com/scaleway/image-tools) and depends on the official [Ubuntu](https://github.com/scaleway/image-ubuntu) image.
 
-__NOTE: __The Rescue image is not a typical image and is only available as a RAM-based image by booting using the Rescue bootscript.__
+__NOTE: The Rescue image is not a typical image and is only available as a RAM-based image by booting [using the Rescue bootscript](https://www.scaleway.com/docs/perform-rescue-action-on-my-server).__
 
 <img src="http://pixabay.com/get/6c00e62840888a242f93/1430925682/helmet-158268_1280.png?direct" width="350px" />
 
