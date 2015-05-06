@@ -1,6 +1,6 @@
 # Official Rescue image on Scaleway
 
-[![Travis](https://img.shields.io/travis/scaleway/image-app-python.svg)](https://travis-ci.org/scaleway/image-app-rescue)
+[![Travis](https://img.shields.io/travis/scaleway/image-service-rescue.svg)](https://travis-ci.org/scaleway/image-service-rescue)
 
 Scripts to build the official Rescue image on Scaleway
 
