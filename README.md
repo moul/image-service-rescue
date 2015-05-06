@@ -1,27 +1,36 @@
-Official Rescue image on Online Labs
-====================================
+# Official Rescue image on Scaleway
 
-Scripts to build the official Rescue image on Online Labs
+[![Travis](https://img.shields.io/travis/scaleway/image-app-python.svg)](https://travis-ci.org/scaleway/image-app-rescue)
 
-This image is built using [Image Tools](https://github.com/online-labs/image-tools) and is based on the official [Ubuntu](https://github.com/online-labs/image-ubuntu) image.
+Scripts to build the official Rescue image on Scaleway
 
-The Rescue image is not a typical image and is only available as a RAM-based image by booting using the Rescue bootscript.
+This image is built using [Image Tools](https://github.com/scaleway/image-tools) and depends on the official [Ubuntu](https://github.com/scaleway/image-ubuntu) image.
+
+__NOTE: __The Rescue image is not a typical image and is only available as a RAM-based image by booting using the Rescue bootscript.__
+
+<img src="http://pixabay.com/get/6c00e62840888a242f93/1430925682/helmet-158268_1280.png?direct" width="350px" />
+
 
 ---
 
 **This image is meant to be used on a C1 server.**
 
-We use the Docker's building system and convert it at the end to a disk image that will boot on real servers without Docker. Note that the image is still runnable as a Docker container for debug or for inheritance.**
+We use the Docker's building system and convert it at the end to a disk image that will boot on real servers without Docker. Note that the image is still runnable as a Docker container for debug or for inheritance.
 
-[More info](https://github.com/online-labs/image-tools#docker-based-builder)
+[More info](https://github.com/scaleway/image-tools)
+
 
 ---
 
-Install
--------
+## Install
 
-Build and write the image to /dev/nbd1 (see [documentation](https://doc.cloud.online.net/howto/create_image.html))
+Build and write the image to /dev/nbd1 (see [documentation](https://www.scaleway.com/docs/create_an_image_with_docker))
 
     $ make install
 
-Full list of commands available at: [online-labs/image-tools](https://github.com/online-labs/image-tools/tree/master#commands)
+Full list of commands available at: [scaleway/image-tools](https://github.com/scaleway/image-tools/#commands)
+
+
+---
+
+A project by [![Scaleway](https://avatars1.githubusercontent.com/u/5185491?v=3&s=42)](https://www.scaleway.com/)
